@@ -1,0 +1,80 @@
+#side_nav {
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s;
+}
+.sidebar-custom-color {
+  background: rgb(5, 0, 32);
+  background: linear-gradient(
+    0deg,
+    rgb(3, 0, 18) 13%,
+    rgb(0, 23, 41) 70%,
+    rgb(0, 31, 55) 90%
+  );
+}
+.content {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+hr.h-color {
+  background: #eee;
+}
+.sidebar li.active {
+  background: linear-gradient(240deg, #fbae3c, #c88b30);
+  border-radius: 8px;
+}
+.sidebar li.active a,
+.sidebar li.active a:hover {
+  color: #eee;
+}
+.sidebar li a {
+  color: #fff;
+}
+.h-color {
+  color: white;
+}
+.height-custom {
+  height: 85%;
+}
+.padding-media {
+  padding-left: 16px;
+}
+.btn-custom1 {
+  border-color: #fbae3c;
+  color: #fbae3c;
+  background-color: inherit;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.btn-custom1:hover {
+  border-color: #c88b30;
+  color: #c88b30;
+  opacity: 0.9;
+}
+.btn-custom1:active {
+  border-color: #c88b30;
+  color: #c88b30;
+  opacity: 0.85;
+  background-color: inherit;
+}
+.btn-custom2 {
+  border-color: #fbae3c;
+  color: white;
+  background-color: #fbae3c;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.btn-custom2:hover {
+  border-color: #c88b30;
+  color: white;
+  background-color: #c88b30;
+  opacity: 0.9;
+  box-shadow: 0 5px 15px rgba(200, 139, 48, 0.5);
+}
+.btn-custom2:active {
+  border-color: #c88b30;
+  color: white;
+  opacity: 0.85;
+  background-color: #c88b30;
+}

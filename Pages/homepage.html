@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HelpDesk</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/homepage.css" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
+  </head>
+  <body>
+    <div class="main-container d-flex padding-media">
+      <div
+        class="sidebar sidebar-custom-color my-3 p-1 rounded-4"
+        id="side_nav"
+      >
+        <div
+          class="header-box px-2 pt-4 pb-4 d-flex justify-content-center align-items-center text-center"
+        >
+          <h1 class="fs-5 text">
+            <span class="text-white">HelpDesk Dashboard</span>
+          </h1>
+          <button class="btn d-md-none d-block close-btn px-1 py-0 text-white">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="d-flex flex-column" style="height: 74%">
+          <div>
+            <ul class="list-unstyled px-2 pt-4 text-start">
+              <li class="active">
+                <a
+                  href="#"
+                  class="text-decoration-none px-3 py-2 d-block fw-lighter"
+                  ><i class="fa-solid fa-chart-line me-3"></i>Dashboard</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-decoration-none px-3 py-2 d-block fw-lighter"
+                  ><i class="fa-regular fa-user me-3"></i>Your Tickets</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between fw-lighter"
+                >
+                  <span
+                    ><i class="fa-solid fa-ticket me-3"></i>Tickets to
+                    Solve</span
+                  >
+                </a>
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-decoration-none px-3 py-2 d-block fw-lighter"
+                  ><i class="fa-solid fa-clock-rotate-left me-3"></i>History</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-decoration-none px-3 py-2 d-block fw-lighter"
+                  ><i class="fa-solid fa-users me-3"></i>Users</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-decoration-none px-3 py-2 d-block fw-lighter"
+                  ><i class="fa-regular fa-question me-3"></i>About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <hr class="h-color mx-2" />
+          <div>
+            <ul class="list-unstyled px-2">
+              <li
+                class="text-white fw-bold d-block px-3 py-4 d-block"
+                style="font-size: 12px"
+              >
+                ACCOUNT PAGES
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-decoration-none px-3 py-2 d-block fw-lighter"
+                  ><i class="fa-solid fa-address-card me-3"></i>Profile</a
+                >
+              </li>
+              <li class="">
+                <a
+                  href="#"
+                  class="text-decoration-none px-3 py-2 d-block fw-lighter"
+                  ><i class="fa-solid fa-gear me-3"></i>Settings</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="footer d-flex flex-column gap-4 justify-content-center align-items-center text-center"
+        >
+          <div>
+            <button class="btn-custom1 fw-light" style="width: 192px">
+              Terms and Conditions
+            </button>
+          </div>
+          <div>
+            <button class="btn-custom2 fw-light" style="width: 192px">
+              Sign Out
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="content bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex justify-content-end w-100">
+              <div class="d-flex justify-content-start d-md-none d-block">
+                <button class="btn px-1 py-0 open-btn me-2">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+              </div>
+              <ul
+                class="navbar-nav mb-2 mx-3 mb-lg-0 d-flex flex-row justify-content-end align-items-center text-center gap-3 ms-auto"
+              >
+                <li class="nav-item">
+                  <button class="btn-create fw-bold px-3 py-1 me-3">
+                    CREATE
+                  </button>
+                </li>
+                <li class="nav-item dropdown custom-position">
+                  <button
+                    class="btn btn-bell btn-light dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-regular fa-bell"></i>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownMenuButton"
+                    style="width: 300px"
+                  >
+                    <li><a class="dropdown-item" href="#">Notificare 3</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Notificare 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Notificare 1</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="fa-regular fa-address-card me-2"></i>Profile
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="dashboard-content px-3 pt-4">
+          <div class="container-fluid py-4">
+            <div class="row">
+              <div class="col-xl-6 col-sm-12 mb-xl-5 mb-5">
+                <div class="card position-relative">
+                  <div
+                    class="card-header rounded-5 d-flex justify-content-between align-items-center bg-white position-relative"
+                  >
+                    <div class="icon bg-your-ticket">
+                      <i class="fa-regular fa-user fa-lg"></i>
+                    </div>
+                    <div class="ms-auto text-end">
+                      <p class="text-muted mb-1">Your Total Tickets</p>
+                      <h4 class="mb-0 fw-bold">7</h4>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-0">
+                      <span class="text-success fw-bold">+55%</span> than last
+                      week
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-sm-12 mb-xl-5 mb-5">
+                <div class="card position-relative">
+                  <div
+                    class="card-header rounded-5 d-flex justify-content-between align-items-center bg-white position-relative"
+                  >
+                    <div class="icon bg-total-tickets">
+                      <i class="fa-solid fa-ticket"></i>
+                    </div>
+                    <div class="ms-auto text-end">
+                      <p class="text-muted mb-1">Total Tickets</p>
+                      <h4 class="mb-0 fw-bold">98</h4>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-0">
+                      <span class="text-success fw-bold">+55%</span> than last
+                      week
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-sm-12 mb-xl-5 mb-5">
+                <div class="card position-relative">
+                  <div
+                    class="card-header rounded-5 d-flex justify-content-between align-items-center bg-white position-relative"
+                  >
+                    <div class="icon bg-solved-tickets">
+                      <i class="fa-solid fa-square-check"></i>
+                    </div>
+                    <div class="ms-auto text-end">
+                      <p class="text-muted mb-1">Solved Tickets</p>
+                      <h4 class="mb-0 fw-bold">77</h4>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-0">
+                      <button class="btn btn-primary">test</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-sm-12 mb-xl-5 mb-5">
+                <div class="card position-relative">
+                  <div
+                    class="card-header rounded-5 d-flex justify-content-between align-items-center bg-white position-relative"
+                  >
+                    <div class="icon bg-unsolved-tickets">
+                      <i class="fa-regular fa-square-check"></i>
+                    </div>
+                    <div class="ms-auto text-end">
+                      <p class="text-muted mb-1">Unsolved Tickets</p>
+                      <h4 class="mb-0 fw-bold">21</h4>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="mb-0">
+                      <span class="text-success fw-bold">+55%</span> than last
+                      week
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer-content d-flex flex-row justify-content-around">
+            <div class="d-flex align-items-center">
+              <span class="text-muted"
+                >© 2024 HelpDesk. All rights reserved.</span
+              >
+            </div>
+            <div class="d-flex align-items-center">
+              <p class="mb-2 me-3">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >About us</a
+                >
+              </p>
+              <p class="mb-2">
+                <a href="#" class="text-secondary text-decoration-none"
+                  >Terms and Conditions</a
+                >
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../jquery-3.7.1.js" type="text/javascript"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidebar ul li").on("click", function () {
+          $(".sidebar ul li.active").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        $(".open-btn").on("click", function () {
+          $("#side_nav").addClass("active");
+        });
+
+        $(".close-btn").on("click", function () {
+          $("#side_nav").removeClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
